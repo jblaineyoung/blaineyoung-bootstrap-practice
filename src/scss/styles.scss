@@ -5,8 +5,43 @@
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
+$theme-colors: (
+  "dkGrey": #2b2d2f
+);
 
 // Import Bootstrap styles
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Import partials here
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.jumbotron {
+  background-image: url(../img/pirate-ship.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'New Tegomin', serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  font-weight: bold
+}
+
+.storyHead {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+#linkBlack {
+  color: black;
+  text-decoration: none;
+}
